@@ -20,13 +20,13 @@
 
 
 1. 获取每个年月的url
-  - 需要在settings.py中设置‘目的集合’ 一般为 ‘_thread’
-  - scrapy crawl ffmpeg_thread
+    - 需要在settings.py中设置‘目的集合’ 一般为 ‘_thread’
+    - scrapy crawl ffmpeg_thread
 2. 第二步，获取每个年月的话题组合情况
-  - 需要在settings.py中设置‘目的集合’ 一般为 ‘_box’
-  - scrapy crawl ffmpeg_box
+    - 需要在settings.py中设置‘目的集合’ 一般为 ‘_box’
+    - scrapy crawl ffmpeg_box
 3. 第三步，获取每个话题的具体信息
-  - 需要在settings.py中设置‘目的集合’ 一般为‘_content’
-  - scrapy crawl ffmpeg_content
+    - 需要在settings.py中设置‘目的集合’ 一般为‘_content’
+    - scrapy crawl ffmpeg_content
 4. 第四步，根据box中的结构信息和content中的具体邮件信息，用gao.py产生要求的topic+reply结构
-  - python  gao.py  ffmpeg_libav_user_box ffmpeg_libav_user_content ffmpeg_libav_user
+    - python  gao.py  ffmpeg_libav_user_box ffmpeg_libav_user_content ffmpeg_libav_user
